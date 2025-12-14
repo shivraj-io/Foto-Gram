@@ -1,25 +1,32 @@
 import './index.css'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Navbar from './components/layout/Navbar'
-import Hero from './components/Hero'
-import About from './components/About'
-import Contact from './components/Contact'
-import Footer from './components/Footer'
-import Login from './components/Login'
-import Signup from './components/Signup'
+import Footer from './components/layout/Footer'
+import Feed from './pages/feed/Feed'
+import Login from './pages/auth/Login'
+import Signup from './pages/auth/Signup'
+import Explore from './pages/explore/Explore'
+import Profile from './pages/profile/Profile'
+import EditProfile from './pages/profile/EditProfile'
 
 function App() {
 	return (
-		<div className="page">
-			<Navbar />
-			<main>
-				<Hero />
-				<About />
-				<Login />
-				<Signup />
-				<Contact />
-			</main>
-			<Footer />
-		</div>
+		<BrowserRouter>
+			<div className="page">
+				<Navbar />
+				<main>
+					<Routes>
+						<Route path="/" element={<Feed />} />
+						<Route path="/explore" element={<Explore />} />
+						<Route path="/profile" element={<Profile />} />
+						<Route path="/profile/edit" element={<EditProfile />} />
+						<Route path="/login" element={<Login />} />
+						<Route path="/signup" element={<Signup />} />
+					</Routes>
+				</main>
+				<Footer />
+			</div>
+		</BrowserRouter>
 	)
 }
 
