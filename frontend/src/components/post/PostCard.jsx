@@ -1,3 +1,7 @@
+import './post.css'
+
+import './post.css'
+
 function PostCard({ children }) {
   return <article className="post-card">{children}</article>
 }

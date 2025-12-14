@@ -1,3 +1,5 @@
+import './common.css'
+
 function Modal({ open, title, children }) {
   if (!open) return null
   return (

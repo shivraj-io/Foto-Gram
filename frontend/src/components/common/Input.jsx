@@ -1,3 +1,5 @@
+import './common.css'
+
 function Input({ label, ...props }) {
   return (
     <label className="input-field">

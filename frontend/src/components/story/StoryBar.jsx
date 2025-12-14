@@ -1,3 +1,5 @@
+import './story.css'
+
 function StoryBar({ children }) {
   return <div className="story-bar">{children}</div>
 }

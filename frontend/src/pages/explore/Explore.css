@@ -1,0 +1,62 @@
+/* Explore Page Styles */
+.section {
+  margin-top: 56px;
+  padding: 12px;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.section h2 {
+  margin: 8px 0 10px;
+  font-size: clamp(26px, 3vw, 32px);
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  color: #a5b4fc;
+  font-weight: 700;
+  font-size: 13px;
+  margin: 0;
+}
+
+.subtitle {
+  color: #cbd5e1;
+  max-width: 580px;
+  margin: 0 auto 18px;
+}
+
+.feature-grid {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.feature-card {
+  padding: 18px;
+  border-radius: 16px;
+  border: 1px solid rgba(148, 163, 184, 0.16);
+  background: rgba(255, 255, 255, 0.02);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.25);
+}
+
+.icon {
+  width: 42px;
+  height: 42px;
+  display: grid;
+  place-items: center;
+  border-radius: 12px;
+  background: rgba(99, 102, 241, 0.14);
+  color: #c7d2fe;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+@media (min-width: 1024px) {
+  .section {
+    margin-top: 72px;
+  }
+}

@@ -1,3 +1,5 @@
+import './Profile.css'
+
 function Profile() {
   return (
     <section className="section" id="profile">

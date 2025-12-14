@@ -1,0 +1,91 @@
+/* Post Components Styles */
+
+/* PostCard */
+.post-card {
+  border: 1px solid rgba(148, 163, 184, 0.16);
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.02);
+  padding: 18px;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);
+  margin-bottom: 16px;
+}
+
+/* PostHeader */
+.post-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.avatar {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #6366f1, #06b6d4);
+  box-shadow: 0 8px 24px rgba(99, 102, 241, 0.35);
+}
+
+.name {
+  margin: 0;
+  font-weight: 600;
+}
+
+.time {
+  margin: 0;
+  color: #cbd5e1;
+  font-size: 13px;
+}
+
+.badge {
+  margin-left: auto;
+  padding: 6px 10px;
+  border-radius: 10px;
+  background: rgba(99, 102, 241, 0.16);
+  color: #c7d2fe;
+  border: 1px solid rgba(99, 102, 241, 0.4);
+  font-weight: 600;
+  font-size: 12px;
+}
+
+/* PostActions */
+.post-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.post-actions button {
+  flex: 1;
+  padding: 10px 0;
+  background: rgba(148, 163, 184, 0.08);
+  border: 1px solid rgba(148, 163, 184, 0.16);
+  border-radius: 12px;
+  color: #e2e8f0;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.post-actions button:hover {
+  background: rgba(148, 163, 184, 0.16);
+  transform: translateY(-1px);
+}
+
+/* CommentList */
+.comments {
+  list-style: none;
+  padding: 0;
+  margin: 12px 0 0;
+}
+
+.comments li {
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(148, 163, 184, 0.12);
+  color: #cbd5e1;
+  font-size: 14px;
+}
+
+.comments li:last-child {
+  border-bottom: none;
+}

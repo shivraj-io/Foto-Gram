@@ -1,0 +1,33 @@
+/* Footer Styles */
+.footer {
+  margin-top: 48px;
+  padding-top: 18px;
+  border-top: 1px solid rgba(148, 163, 184, 0.16);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  justify-content: space-between;
+  color: #cbd5e1;
+}
+
+.footer-links {
+  display: flex;
+  gap: 12px;
+  font-size: 14px;
+}
+
+.footer-links a {
+  color: #cbd5e1;
+  transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+  color: #e2e8f0;
+}
+
+@media (min-width: 1024px) {
+  .footer {
+    padding-top: 24px;
+  }
+}
